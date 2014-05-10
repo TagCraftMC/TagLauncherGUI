@@ -70,11 +70,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="AutoUpdaterGUI.Designer.vb">
+      <DependentUpon>AutoUpdaterGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AutoUpdaterGUI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="LauncherGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LauncherGUI.Designer.vb">
+      <DependentUpon>LauncherGUI.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -92,13 +98,37 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OptionsGUI.Designer.vb">
+      <DependentUpon>OptionsGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MinecraftUpdaterGUI.Designer.vb">
+      <DependentUpon>MinecraftUpdaterGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MinecraftUpdaterGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AutoUpdaterGUI.resx">
+      <DependentUpon>AutoUpdaterGUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LauncherGUI.resx">
+      <DependentUpon>LauncherGUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinecraftUpdaterGUI.resx">
+      <DependentUpon>MinecraftUpdaterGUI.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsGUI.resx">
+      <DependentUpon>OptionsGUI.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +142,54 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUI_Theme_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUI_Theme_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUI_Theme_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUI_Theme_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUI_Theme_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUI_Theme_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUI_Theme_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUI_Theme_8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options_GUI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUI_Theme_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolBarClose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolBarMinimize.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolBarOptions.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolBarClose_Hover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolBarMinimize_Hover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolBarOptions_Hover.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
