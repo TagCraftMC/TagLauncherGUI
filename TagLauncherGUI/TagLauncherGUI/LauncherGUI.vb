@@ -2,6 +2,7 @@
     Dim drag As Boolean
     Dim mousex As Integer
     Dim mousey As Integer
+    'Label1.Font = MinecraftFont.GetInstance(20.25, FontStyle.Regular)
 
     Private Sub LauncherGUI_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseDown
         drag = True

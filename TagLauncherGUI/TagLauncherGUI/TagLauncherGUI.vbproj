@@ -83,6 +83,7 @@
       <DependentUpon>LauncherGUI.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MinecraftFont.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -168,6 +169,7 @@
     <None Include="Resources\GUI_Theme_8.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\minecraft_font_by_pwnage_block-d37t6nb.ttf" />
     <None Include="Resources\Options_GUI.jpg" />
   </ItemGroup>
   <ItemGroup>

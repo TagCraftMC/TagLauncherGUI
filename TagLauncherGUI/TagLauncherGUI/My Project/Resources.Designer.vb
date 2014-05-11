@@ -151,6 +151,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property minecraft_font_by_pwnage_block_d37t6nb() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("minecraft_font_by_pwnage_block_d37t6nb", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property Options_GUI() As System.Drawing.Bitmap
